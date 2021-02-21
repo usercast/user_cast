@@ -34,6 +34,9 @@ gem 'oj', '~> 3.11.2 '
 # mongodb client
 gem 'mongo', '~> 2.14'
 
+# add support for Cross-Origin Resource Sharing (CORS)
+gem 'rack-cors'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger consoe
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
