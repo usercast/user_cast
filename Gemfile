@@ -35,8 +35,10 @@ gem 'oj', '~> 3.11.2 '
 gem 'mongo', '~> 2.14'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger consoe
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # bdd testing framework
+  gem 'rspec-rails', '~> 4.0.2'
 end
 
 group :development do
@@ -56,8 +58,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  # bdd testing frameworkd
-  gem 'rspec', '~> 3.10.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
