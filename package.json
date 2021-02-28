@@ -1,6 +1,9 @@
 {
   "name": "user-cast",
   "private": true,
+  "scripts": {
+    "commit": "commit"
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -10,6 +13,9 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/prompt-cli": "^11.0.0"
   }
 }
