@@ -20,7 +20,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: user_cast_test_<%= ENV['TEST_ENV_NUMBER'] %>
+  database: user_cast_test_<%= ENV['TEST_ENV_NUMBER'] || 0 %>
 
 production:
   <<: *default

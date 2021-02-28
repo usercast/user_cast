@@ -40,6 +40,15 @@ gem 'rack-cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger consoe
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # add pry bindings to byebug
+  gem 'pry-byebug'
+
+  # accesses binding object of caller
+  gem 'binding_of_caller'
+
+  # show-doc and show-source for ruby native code
+  gem 'pry-doc', '~> 1.1'
+
   # bdd testing framework
   gem 'rspec-rails', '~> 4.0.2'
 end
